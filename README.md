@@ -1,1 +1,1 @@
-- OlA
+- Just a fun way to update your linux <3 
