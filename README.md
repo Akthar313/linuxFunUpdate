@@ -3,7 +3,7 @@
 ### Usage
 ```
 git clone https://github.com/Akthar313/linuxFunUpdate.git
-cd LinuxFunUpdate
+cd linuxFunUpdate
 chmod +x updateFun.py
 ./updateFun.py
 ```
