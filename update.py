@@ -30,29 +30,29 @@ else:
     print("------------------ Wow you're root and I'm groot! -----------------\n")
     
     print("---------"*2 + "UPDATING" + "---------"*2 )
-    # update = ("sudo apt update")
-    # os.system(update)
+    update = ("sudo apt update")
+    os.system(update)
 
     upg = input("\n> Do you want to full-upgrade? [default \"y\"] (y/n): ")
     if (upg == "y" or upg == ""):
         print("\n" + "---------"*2 + "FULL-UPGRADING" + "---------"*2 )
-        # upgrade = ("sudo apt full-upgrade")
-        # os.system(upgrade)
+        upgrade = ("sudo apt full-upgrade")
+        os.system(upgrade)
 
         uph = input("\n> Do you want to upgrade youre kernel headers? [default \"y\"] (y/n): ")
         if (uph == "y" or uph == ""):
             print("\n" + "---------"*2 + "INSTALLING/UPDATING KERNEL HEADERS" + "---------"*2)
-            # headers = ("sudo apt install linux-headers-$(uname -r)")
-            # os.system(headers)
+            headers = ("sudo apt install linux-headers-$(uname -r)")
+            os.system(headers)
     else:
         print("\nYou missed full-upgrade and kernel headers")
 
     clean = input("\n> Do You want to run autoclean and autoremove? [default \"y\"] (y/n): ")
     if (clean == "y" or clean == "Y" or clean == ""):
         print("\n" + "---------"*2 + "CLEANING..." + "---------"*2 )
-        # autoclean = ("sudo apt autoclean")
-        # autoremove = ("sudo apt autoremove")
-        # os.system(autoclean + "&&" + autoremove)
+        autoclean = ("sudo apt autoclean")
+        autoremove = ("sudo apt autoremove")
+        os.system(autoclean + "&&" + autoremove)
 
     elif(clean == "n" or clean == "N"):
         print("\nHave a nice day!")
