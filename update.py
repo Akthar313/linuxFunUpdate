@@ -39,7 +39,7 @@ else:
         upgrade = ("sudo apt full-upgrade")
         os.system(upgrade)
 
-        uph = input("\n> Do you want to upgrade youre kernel headers? [default \"y\"] (y/n): ")
+        uph = input("\n> Do you want to upgrade kernel headers? [default \"y\"] (y/n): ")
         if (uph == "y" or uph == ""):
             print("\n" + "---------"*2 + "INSTALLING/UPDATING KERNEL HEADERS" + "---------"*2)
             headers = ("sudo apt install linux-headers-$(uname -r)")
@@ -62,9 +62,9 @@ else:
         
 
     if((upg == "y" or upg == "") and (uph == "y" or uph == "") and (clean == "y" or clean == "")):
-        print("Manh!, You're all set...")
+        print("\nManh!, You're all set...")
     else:
-        print("You've missed upgrade or cleanup!")
+        print("\nYou've missed upgrade or cleanup!")
 
     bye = os.system('figlet -c bye +')
     exit(0)
